@@ -14,3 +14,6 @@ This is a transnational data set which contains all the transactions occuring be
 - **UnitPrice:** Unit price. Numeric, Product price per unit in sterling.
 - **CustomerID:** Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
 - **Country:** Country name. Nominal, the name of the country where each customer resides.
+## Dataset Overview:
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Dataset%20Overview.png?raw=true)
+
