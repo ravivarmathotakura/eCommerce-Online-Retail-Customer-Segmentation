@@ -1,7 +1,7 @@
 # Retail Analysis and Customer Segmentation
-# Dataset Information:
+## Dataset Information:
 This is a transnational data set which contains all the transactions occuring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occassion gifts. Many customers of the company are wholesalers.
-Dataset Characteristics: Multivariate, Sequential, Time-Series.
+- **Dataset Characteristics:** Multivariate, Sequential, Time-Series.
 Number of Instances: 5,41,909
 Number of Attributes: 08
 Associated Tasks: Classification, Clustering.
