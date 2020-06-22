@@ -1,1 +1,1 @@
-# eCommerce (Online Retail) Customer Segmentation
+# Retail Analysis and Customer Segmentation
