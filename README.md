@@ -40,6 +40,35 @@ How many unique descriptors are there in "Descriptions"?
 - Collate all the purchases made during a single order to calculate the total order value:
 ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Classify%20customers%20based%20on%20total%20spend.png?raw=true)
 The distribution of basket is somewhat bimodal. This histogram of basket values indicates a large number of low total value baskets and a small number of individual orders totaling high value baskets. This observation can be used to bin customers into those spending small amounts, medium amounts, and high value baskets (note the bimodal distribution above may cause an imbalance problem for machine learning)
-
-
+## Clustering
+- Group by CustomerID, together with sum or number of items (quantity) and the unit price
+## Feature Scaling using sklearn StandardScaler
+- Using the Elbow method to find the optimum number of clusters
+- From 2-10 doing multiple random initializations can make a huge difference to find a better local optimal
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Clustering.png?raw=true)
+## Fitting K-Means to the Dataset
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/k-mean.png?raw=true)
+Clustering appears to separate the customers based on numbers of items and total spend, which would be expected.
+## Modeling
+### Machine Learning Data Preparation
+- A cursory examination of correlation to identify potentially problematic variables from the model training dataset.
+- Heat Map to look for correlation
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/HeatMap.png?raw=true)
+Unsurprisingly, total spend correlates with quantity and the spend_label. Potentially, quantity or total spend may have to be removed for training.
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Spend%20Label.png?raw=true)
+This data is very imbalanced. For the purposes of this investigation the lower value baskets will be used for prediction.
+Below I will identify a range suitable for binning:
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Total%20Spend1.png?raw=true)
+Here we are repeating the labeling of total spend from low (0), medium (1), and high (2), but with the lower range of values.
+Numerical labels represent 0 - low value baskets, 1 - medium value baskets, 3 - higher value baskets.
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Spend%20Label1.png?raw=true)
+The data is still unbalanced in terms of representation from high value baskets, but more balanced than the full dataset.
+Create dummy variables from the string columns (descriptions and country).
+#### PCA is being performed on the 1st 100000 data points due to limited compute resource
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/PCA.png?raw=true)
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/PCA1.png?raw=true)
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/PCA2.png?raw=true)
+From the PCA analysis of the dataset, the majority of variance in the model is in the 1st principle component. It is of no great surprise that potentially, total spend is sufficient to predict the basket size label. From visualisation of the principle components, the labels are well separated/clustered, facilitating machine learning. The bimodal appearance of the data requires further investigation.
+## Additional training data using 'Country' as label
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/PCA3.png?raw=true)
 
