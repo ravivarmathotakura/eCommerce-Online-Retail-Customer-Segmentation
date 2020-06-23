@@ -34,13 +34,12 @@ How many unique descriptors are there in "Descriptions"?
 ## Investigation the Total Amount Spent per Customers:
  ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/ITASC.png?raw=true)
  ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Total%20Spend%20per%20Country.png?raw=true)
-#### Top Purchasers
  ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Top%20Purchasers.png?raw=true)
-#### Locate the Country of Origin of the Top 50 Biggest Spenders
- ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Top%2050%20Biggest%20Spenders.png?raw=true)
-
-
-
+ ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Top%2050%20Biggest%20Spenders1.png?raw=true)
+#### Classify Customers Based on Total Spend
+- Collate all the purchases made during a single order to calculate the total order value:
+![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/Classify%20customers%20based%20on%20total%20spend.png?raw=true)
+The distribution of basket is somewhat bimodal. This histogram of basket values indicates a large number of low total value baskets and a small number of individual orders totaling high value baskets. This observation can be used to bin customers into those spending small amounts, medium amounts, and high value baskets (note the bimodal distribution above may cause an imbalance problem for machine learning)
 
 
 
