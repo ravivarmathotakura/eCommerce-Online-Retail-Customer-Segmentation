@@ -78,12 +78,18 @@ How many unique descriptors are there in "Descriptions"?
 
 - The data is still unbalanced in terms of representation from high value baskets, but more balanced than the full dataset.
 - Create dummy variables from the string columns (descriptions and country).
+
 #### PCA is being performed on the 1st 100000 data points due to limited compute resource
+
 ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/PCA.png?raw=true)
+
 ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/PCA1.png?raw=true)
+
 ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/PCA2.png?raw=true)
 
 - From the PCA analysis of the dataset, the majority of variance in the model is in the 1st principle component. It is of no great surprise that potentially, total spend is sufficient to predict the basket size label. From visualisation of the principle components, the labels are well separated/clustered, facilitating machine learning. The bimodal appearance of the data requires further investigation.
+
 ## Additional training data using 'Country' as label
+
 ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/PCA3.png?raw=true)
 
