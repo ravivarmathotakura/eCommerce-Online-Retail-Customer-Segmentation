@@ -93,3 +93,16 @@ How many unique descriptors are there in "Descriptions"?
 
 ![alt text](https://github.com/ravivarmathotakura/eCommerce-Online-Retail-Customer-Segmentation/blob/master/images/PCA3.png?raw=true)
 
+## Machine Learning: Predicting Customer Spend
+- For the purposes of this work I will select a 70/30 split - 70% training data and 30% test data. This approach does not use a validation set however it provides a large dataset for training and testing. Cross validation of the training data set will also be used during model training
+
+![alt text](https://github.com/ravivarmathotakura/eCommerce_Online_Retail_Customer_Segmentation/blob/master/images/model%20training.png?raw=true)
+
+## Naive Bayes
+- Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the 'naive' assumption of independence between every pair of features.
+- Naive bayes was chosen to build the 1st iteration of the model because it is a fast algorithm and requires no hyperparameters. This method will provide an indication of whether or not a model can be built using this dataset without using more computationally expensive methods.
+
+![alt text](https://github.com/ravivarmathotakura/eCommerce_Online_Retail_Customer_Segmentation/blob/master/images/Naive%20Bayes.png?raw=true)
+
+![alt text](https://github.com/ravivarmathotakura/eCommerce_Online_Retail_Customer_Segmentation/blob/master/images/nb%20Confusion%20Matrix.png?raw=true)
+
